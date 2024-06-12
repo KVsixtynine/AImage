@@ -1,12 +1,9 @@
 // index.js
 const express = require("express");
-const cors = require('cors'); // Import CORS for handling cross-origin requests
-
-const { Client } = require("@gradio/client"); // Use require for @gradio/client
 
 const app = express();
 
-app.use(cors()); // Enable CORS for all routes
+
 
 app.get("/", (req, res) => {
   res.send("Express on Vercel with Gradio Client");

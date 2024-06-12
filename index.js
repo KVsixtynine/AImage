@@ -12,10 +12,6 @@ app.get("/", (req, res) => {
   res.send("Express on Vercel with Gradio Client");
 });
 
-// Used to keep this awake
-app.use('/myping', (req, res) => {
-  res.send('Ping!');
-});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
@@ -23,3 +19,6 @@ app.listen(PORT, () => {
 });
 
 module.exports = app; 
+
+
+

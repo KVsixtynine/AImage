@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +13,7 @@
   "dependencies": {
     "@gradio/client": "^1.1.1",
     "@types/node": "^18.0.6",
+    "cors": "^2.8.5",
     "express": "^4.19.2"
   }
 }

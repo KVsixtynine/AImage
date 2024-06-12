@@ -1,3 +1,5 @@
+import { Client } from "@gradio/client";
+
 // index.js
 const express = require("express");
 

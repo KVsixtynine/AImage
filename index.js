@@ -8,7 +8,9 @@ const app = express();
 app.get("/", (req, res) => {
   res.send("Express on Vercel with Gradio Client");
 });
-
+app.use("/ping", (req,res) => {
+  res.send("Ping!");
+});
 
 
 const PORT = process.env.PORT || 5000;

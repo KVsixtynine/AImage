@@ -27,7 +27,7 @@ async function query(data) {
 	const response = await fetch(
 		"https://api-inference.huggingface.co/models/alvdansen/BandW-Manga",
 		{
-			headers: { Authorization: "Bearer hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" },
+			headers: { Authorization: "Bearer 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" },
 			method: "POST",
 			body: JSON.stringify(data),
 		}
@@ -36,5 +36,5 @@ async function query(data) {
 	return result;
 }
 query({"inputs": "Astronaut riding a horse"}).then((response) => {
-	// Use image
+	console.log(response);
 });
